@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/running_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_running_string"
+            android:fontFamily="@font/macherie"
+            android:gravity="center"
+            android:text="Бегущая строка"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:constraint_referenced_ids="ib_goroskop, ib_anekdot, ib_kubik, ib_quote, ib_sign, ib_motivation"
+            app:flow_horizontalGap="8dp"
+            app:flow_verticalGap="8dp"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/running_string" />
+
+
+        <ImageButton
+            android:id="@+id/ib_goroskop"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/sl_goroskop"
+            tools:layout_editor_absoluteX="112dp" />
+
+        <ImageButton
+            android:id="@+id/ib_anekdot"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/sl_anekdot"
+            tools:layout_editor_absoluteX="349dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/ib_kubik"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/sl_dice"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="162dp" />
+
+        <ImageButton
+            android:id="@+id/ib_quote"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/sl_quote"
+            tools:layout_editor_absoluteX="401dp"
+            tools:layout_editor_absoluteY="162dp" />
+
+        <ImageButton
+            android:id="@+id/ib_sign"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/sl_sign"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <ImageButton
+            android:id="@+id/ib_motivation"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/sl_motivation"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <TextView
+            android:id="@+id/tv_with_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lagunac"
+            android:gravity="center"
+            android:text="@string/help_main"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toTopOf="@+id/ib_avocado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ib_motivation" />
+
+        <ImageButton
+            android:id="@+id/ib_avocado"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/sl_avocado"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_menu_subtract"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="-34dp">
+
+            <ImageButton
+                android:id="@+id/person1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_person"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/person2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@null"
+                android:src="@drawable/ic_person"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintHorizontal_bias="0.17"
+                app:layout_constraintStart_toEndOf="@+id/person1"
+                app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/person3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@null"
+                app:layout_constraintHorizontal_bias="0.83"
+                android:src="@drawable/ic_person"
+                app:layout_constraintEnd_toStartOf="@+id/person4"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/person4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_person"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageButton>>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="208dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
