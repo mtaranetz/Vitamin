@@ -8,6 +8,7 @@ import android.view.animation.AnimationUtils
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.vitamin.ui.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var helloTextView: TextView
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val mH: Handler = Handler()
         val run = object : Runnable{
             override fun run() {
-                val intent = Intent(this@MainActivity, ButtonActivity::class.java)
+                val intent = Intent(this@MainActivity, LoginActivity::class.java)
                 startActivity(intent)
             }
         }
