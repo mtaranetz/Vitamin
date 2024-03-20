@@ -25,10 +25,10 @@ class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
-        setContentView(binding.root)
         auth = Firebase.auth
-
         checkAccount()
+        setContentView(binding.root)
+
 
         launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult())
         {

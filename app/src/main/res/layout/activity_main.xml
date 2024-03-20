@@ -18,8 +18,9 @@
 
     <TextView
         android:id="@+id/hellou"
-        android:layout_width="349dp"
-        android:layout_height="82dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/macherie"
         tools:text="Добрый день, Румяна!"
         android:textColor="@color/black"
@@ -28,6 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

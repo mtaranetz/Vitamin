@@ -1,42 +1,33 @@
 {
   "project_info": {
-    "project_number": "346761240468",
-    "firebase_url": "https://vitamin-database-default-rtdb.firebaseio.com",
-    "project_id": "vitamin-database",
-    "storage_bucket": "vitamin-database.appspot.com"
+    "project_number": "1057312843792",
+    "project_id": "vitamin-ab361",
+    "storage_bucket": "vitamin-ab361.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:346761240468:android:ea2846bd56cd8d1c19b981",
+        "mobilesdk_app_id": "1:1057312843792:android:b9c56a74fa125617f28295",
         "android_client_info": {
           "package_name": "com.example.vitamin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "346761240468-gheluq95phai52erqfhvkjiovgk4fbqk.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.vitamin",
-            "certificate_hash": "30a2a70d2a2fbf2752a0865af32abd225addf8ba"
-          }
-        },
-        {
-          "client_id": "346761240468-f7t49i7hiapd0dght17t5qnlldkrgsnt.apps.googleusercontent.com",
+          "client_id": "1057312843792-kuntjjbc7c2av9334taon1lvcegdj84f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDm3FpBetiscncLvDZp7JTs5Tq2UArPPJ0"
+          "current_key": "AIzaSyAot5mH4_8yGC9IGLkcQEXPMQPfQSb2NPw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "346761240468-f7t49i7hiapd0dght17t5qnlldkrgsnt.apps.googleusercontent.com",
+              "client_id": "1057312843792-kuntjjbc7c2av9334taon1lvcegdj84f.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

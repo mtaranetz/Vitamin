@@ -123,17 +123,18 @@
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="-34dp">
 
-            <ImageButton
+
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/person1"
-                android:layout_width="58dp"
-                android:layout_height="58dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:background="@null"
-                android:scaleType="centerInside"
                 android:src="@drawable/ic_person"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></ImageButton>
-
+                app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+ 
             <ImageButton
                 android:id="@+id/person2"
                 android:layout_width="58dp"
