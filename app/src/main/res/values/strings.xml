@@ -6,4 +6,6 @@
     <string name="your_profile">ваш профиль</string>
     <string name="your_bday">дата рождения</string>
     <string name="your_sign">знак зодиака</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

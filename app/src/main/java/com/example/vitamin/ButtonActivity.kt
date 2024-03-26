@@ -20,26 +20,20 @@ class ButtonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         auth = Firebase.auth
         setContentView(R.layout.activity_buttons)
-        val accountImage : ImageView = findViewById(R.id.person1)
-
-        accountImage.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
-            startActivity(intent)
-        }
 
         //решение требует времени
         //Glide.with(getApplicationContext()).load(auth.currentUser?.photoUrl).into(accountImage);
-        Picasso.get().load(auth.currentUser?.photoUrl).into(object : com.squareup.picasso.Target {
-            override fun onBitmapLoaded(bitmap: Bitmap?, from: Picasso.LoadedFrom?) {
-                // loaded bitmap is here (bitmap)
-
-                accountImage.setImageBitmap(bitmap)
-            }
-
-            override fun onPrepareLoad(placeHolderDrawable: Drawable?) {}
-
-            override fun onBitmapFailed(e: Exception?, errorDrawable: Drawable?) {}
-        })
+//        Picasso.get().load(auth.currentUser?.photoUrl).into(object : com.squareup.picasso.Target {
+//            override fun onBitmapLoaded(bitmap: Bitmap?, from: Picasso.LoadedFrom?) {
+//                // loaded bitmap is here (bitmap)
+//
+//                accountImage.setImageBitmap(bitmap)
+//            }
+//
+//            override fun onPrepareLoad(placeHolderDrawable: Drawable?) {}
+//
+//            override fun onBitmapFailed(e: Exception?, errorDrawable: Drawable?) {}
+//        })
     }
 
 

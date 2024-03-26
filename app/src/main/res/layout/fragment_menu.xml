@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ib_avocado"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/sl_avocado"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_menu_subtract"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="-34dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:src="@drawable/ic_person"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <ImageButton
+                android:id="@+id/person2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@null"
+                android:src="@drawable/ic_person"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintHorizontal_bias="0.17"
+                app:layout_constraintStart_toEndOf="@+id/person1"
+                app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/person3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@null"
+                app:layout_constraintHorizontal_bias="0.83"
+                android:src="@drawable/ic_person"
+                app:layout_constraintEnd_toStartOf="@+id/person4"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/person4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_person"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageButton>>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="208dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
