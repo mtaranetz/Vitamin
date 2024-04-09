@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CardsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/running_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_running_string"
+        android:fontFamily="@font/macherie"
+        android:gravity="center"
+        android:text="Бегущая строка"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:constraint_referenced_ids="ib_goroskop, ib_anekdot, ib_kubik, ib_quote, ib_sign, ib_motivation"
+        app:flow_horizontalGap="8dp"
+        app:flow_verticalGap="8dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/running_string" />
+
+    <ImageButton
+        android:id="@+id/ib_goroskop"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/sl_goroskop" />
+
+    <ImageButton
+        android:id="@+id/ib_anekdot"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/sl_anekdot"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageButton
+        android:id="@+id/ib_kubik"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/sl_dice"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <ImageButton
+        android:id="@+id/ib_quote"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/sl_quote"
+        tools:layout_editor_absoluteX="401dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <ImageButton
+        android:id="@+id/ib_sign"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/sl_sign"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <ImageButton
+        android:id="@+id/ib_motivation"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/sl_motivation"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <TextView
+        android:id="@+id/tv_with_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lagunac"
+        android:gravity="center"
+        android:text="@string/help_main"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_motivation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

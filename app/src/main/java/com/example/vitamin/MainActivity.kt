@@ -8,6 +8,7 @@ import android.view.animation.AnimationUtils
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.FragmentTransaction
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.google.firebase.auth.ktx.auth
@@ -18,11 +19,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         val pearsImageView: ImageView = findViewById(R.id.main_pears)
         val pearsTurnAnimation = AnimationUtils.loadAnimation(this, R.anim.pears_animation)
@@ -49,16 +48,15 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-        private fun userFirstName(auth: FirebaseAuth): String {
-            val s: String? = auth.currentUser?.displayName
-            var f: String = ""
-            if (s != null) {
-                for(letter in s)
-                {
-                    if (!letter.isWhitespace()) f += letter
-                    else break
-                }
+    private fun userFirstName(auth: FirebaseAuth): String {
+        val s: String? = auth.currentUser?.displayName
+        var f: String = ""
+        if (s != null) {
+            for (letter in s) {
+                if (!letter.isWhitespace()) f += letter
+                else break
             }
-            return f
         }
+        return f
     }
+}

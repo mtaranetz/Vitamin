@@ -1,47 +1,76 @@
 package com.example.vitamin
 
-import android.content.Intent
+import android.app.Activity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import androidx.fragment.app.FragmentManager
+import android.widget.ImageButton
+import androidx.fragment.app.Fragment
+import de.hdodenhof.circleimageview.CircleImageView
+import java.lang.ClassCastException
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+public interface buttonClicked {
 
-/**
- * A simple [Fragment] subclass.
- * Use the [MenuFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class MenuFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    public fun buttonClick(number: Number)
+}
+class MenuFragment : Fragment(), buttonClicked {
+
+    private val button_num = 0
+    internal var activity: Activity? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        context?.let { super.onAttach(it) }
+        if (context is Activity) activity = context as Activity
         val view: View = inflater.inflate(R.layout.fragment_menu, container, false)
-        // Inflate the layout for this fragment
-        val p1: ImageView = view.findViewById(R.id.person1)
-//        p1.setOnClickListener {
-//            val fM: FragmentManager =
-//            FragmentManager fragmentManager = getFragmentManager()
-//            fragmentManager.beginTransaction()
-//                .remove(fragment1)
-//                .add(R.id.fragment_container, fragment2)
-//                .show(fragment3)
-//                .hide(fragment4)
-//                .commit();
-//        }
+        //профиль пользователя
+        val profile: CircleImageView = view.findViewById(R.id.person1)
+        val avocado: ImageButton = view.findViewById(R.id.ib_avocado)
+        //другие разделы
+        val person2: ImageButton = view.findViewById(R.id.person2)
+        val person3: ImageButton = view.findViewById(R.id.person3)
+        val person4: ImageButton = view.findViewById(R.id.person4)
 
+        //штучка со слушателем нажатий была взята отсюда https://habr.com/ru/articles/448744/
+        profile.setOnClickListener {
+            try{
+                (activity as buttonClicked).buttonClick(1)
+            }
+            catch (ignored: ClassCastException){ }
+        }
+        avocado.setOnClickListener {
+            try{
+                (activity as buttonClicked).buttonClick(5)
+            }
+            catch (ignored: ClassCastException){ }
+        }
+
+        person2.setOnClickListener {
+            try{
+                (activity as buttonClicked).buttonClick(2)
+            }
+            catch (ignored: ClassCastException){ }
+        }
+        person3.setOnClickListener {
+            try{
+                (activity as buttonClicked).buttonClick(3)
+            }
+            catch (ignored: ClassCastException){ }
+        }
+        person4.setOnClickListener {
+            try{
+                (activity as buttonClicked).buttonClick(4)
+            }
+            catch (ignored: ClassCastException){ }
+        }
         return view
     }
+    override fun buttonClick(number: Number) {}
 }
+
+
+
+
