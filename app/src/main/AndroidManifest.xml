@@ -14,11 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Vitamin"
         tools:targetApi="31">
-        <activity
-            android:name=".SplashActivity"
-            android:exported="true">
 
-        </activity>
         <activity
             android:name=".RegistrationActivity"
             android:exported="true">

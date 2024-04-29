@@ -1,11 +1,25 @@
 <resources>
-    <string name="app_name">Vitamin</string>
-    <string name="help_main">Приложение сделано с любовью (и болью)</string>
+    <string name="app_name">Витамин</string>
+    <string name="help_main">Приложение сделано с любовью (и болью)<font color="#2EC6F1"> <u>кем?</u></font></string>
     <string name="registration">Войти с Google</string>
     <string name="help_sign">Для продолжения работы войдите в аккаунт</string>
     <string name="your_profile">ваш профиль</string>
     <string name="your_bday">дата рождения</string>
     <string name="your_sign">знак зодиака</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="your_horoscope">Ваш гороскоп на сегодня</string>
+    <string name="toolsHoroskope">Сегодняшний день будет полон делами, в каждом из которых вы будете
+        чувствовать необходимость проявить себя наилучшим образом. Вы будете смотреться еще
+        выигрышнее, если решитесь использовать новые (но не запрещенные!) приемы.</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="good_prank">"Хороший анекдот - он как вкусная клубничка: \n<big>
+        <u>"всегда в тему!</u></big>"</string>
+    <string name="quotes">Будь как ананас:\n держись прямо, носи корону и оставайся сладким внутри</string>
+    <string name="motivation_start">Возможно, сейчас тебе грустно, но скоро всё будет отлично-клубнично и потрясно-ананасно!</string>
+    <string name="motivation_middle"><u>Ты можешь всё!</u></string>
+    <string name="motivation_end">А теперь возвращайся к работе и  жизни!\n\n\nЕсли жизнь даёт тебе лимоны,
+        сделай грушевый смузи - \nвот все офигеют!</string>
+    <string name="about_us">Авторы: \nтаксим маранец\nгрумяна румеза \n\nглавный Спонсор:\nЛеонид Коневский\n\nСтать котом и влезть в арбуз\nЛегче, чем закончить ВУЗ!</string>
+    <string name="sign_text">Не бросай на дорогу кожуру от банана - сам на ней поскользнёшься!</string>
+    <string name="music_string">Для продолжения продуктивной работы обязательно включите музыку от нашего спонсора - котенка-поваренка!</string>
+
 </resources>

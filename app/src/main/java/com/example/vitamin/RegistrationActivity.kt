@@ -7,14 +7,12 @@ import android.util.Log
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.vitamin.databinding.ActivityRegistrationBinding
-import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.auth.auth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
@@ -76,6 +74,10 @@ class RegistrationActivity : AppCompatActivity() {
     {
         if (auth.currentUser != null){
             val intent = Intent(this, MainActivity::class.java)
+
+//            val database = Firebase.database("https://vitamin-database-default-rtdb.firebaseio.com/users/OHvqGncXszQ7d5BVZx48RN2IPgY2")
+//            val usersRef = database.getReference("users/")
+//            usersRef.push().setValue(UserBday("ghj", ihi))
             startActivity(intent)
         }
     }
