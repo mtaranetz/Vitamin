@@ -1,22 +1,21 @@
 package com.example.vitamin
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.animation.AnimationUtils
-import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.fragment.app.FragmentTransaction
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.auth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     private lateinit var helloTextView: TextView
     private lateinit var auth: FirebaseAuth
+    private lateinit var sharedPreferences: SharedPreferences
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +26,16 @@ class MainActivity : AppCompatActivity() {
         val pearsTurnAnimation = AnimationUtils.loadAnimation(this, R.anim.pears_animation)
         pearsImageView.startAnimation(pearsTurnAnimation)
         auth = Firebase.auth
-        val name: String = userFirstName(auth)
+        sharedPreferences = getSharedPreferences("UserPreferences", MODE_PRIVATE)
+
+        // Проверяем, вошел ли пользователь через Firebase
+        val name: String = if (auth.currentUser != null) {
+            userFirstName(auth)
+        } else {
+            // Если пользователь вошел через логин и пароль, получаем имя из SharedPreferences
+            sharedPreferences.getString("username", "Пользователь") ?: "Пользователь"
+        }
+
         helloTextView = findViewById(R.id.hellou)
         val msg: String = "Добрый день, " + name + '!'
         helloTextView.setText(msg)

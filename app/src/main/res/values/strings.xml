@@ -21,5 +21,17 @@
     <string name="about_us">Авторы: \nтаксим маранец\nгрумяна румеза \n\nглавный Спонсор:\nЛеонид Коневский\n\nСтать котом и влезть в арбуз\nЛегче, чем закончить ВУЗ!</string>
     <string name="sign_text">Не бросай на дорогу кожуру от банана - сам на ней поскользнёшься!</string>
     <string name="music_string">Для продолжения продуктивной работы обязательно включите музыку от нашего спонсора - котенка-поваренка!</string>
+    <string name="URL_РЫБЫ">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%20%3D%20%D0%A0%D1%8B%D0%B1%D1%8B.png?alt=media&amp;token=213aa0f1-62b3-49fa-b298-47de2728a8d2</string>
+    <string name="URL_БЛИЗНЕЦЫ">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%91%D0%BB%D0%B8%D0%B7%D0%BD%D0%B5%D1%86%D1%8B.png?alt=media&amp;token=1170e80b-751f-4749-bb91-ddbd49589a8c</string>
+    <string name="URL_ВЕСЫ">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%92%D0%B5%D1%81%D1%8B.png?alt=media&amp;token=142d3b12-6006-480e-a51c-5bdee014a329</string>
+    <string name="URL_ВОДОЛЕЙ">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%92%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D0%B9.png?alt=media&amp;token=f1fcc56a-bae2-4bd2-80d6-26441bb6d312</string>
+    <string name="URL_ДЕВА">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%94%D0%B5%D0%B2%D0%B0.png?alt=media&amp;token=7d17b94f-de9e-4600-ac9a-b70af0faa4ad</string>
+    <string name="URL_КОЗЕРОГ">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%9A%D0%BE%D0%B7%D0%B5%D1%80%D0%BE%D0%B3.png?alt=media&amp;token=6bc16b7f-227b-4d29-9d2a-7638ef89622c</string>
+    <string name="URL_ЛЕВ">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%9B%D0%B5%D0%B2.png?alt=media&amp;token=a5cc5b74-5b68-424a-85ca-e1aca1af8310</string>
+    <string name="URL_ОВЕН">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%9E%D0%B2%D0%B5%D0%BD.png?alt=media&amp;token=64e13c5e-2f3c-48d0-84e9-c298ac9c874b</string>
+    <string name="URL_РАК">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%A0%D0%B0%D0%BA.png?alt=media&amp;token=f1221341-f558-437f-8570-d1a649ef54d0</string>
+    <string name="URL_СКОРПИОН">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%A1%D0%BA%D0%BE%D1%80%D0%BF%D0%B8%D0%BE%D0%BD.png?alt=media&amp;token=efb8a1ed-f7e7-4eef-a101-e53a48bc6776</string>
+    <string name="URL_СТРЕЛЕЦ">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%B5%D1%86.png?alt=media&amp;token=e91b9da8-2722-457e-9983-dc2fb0eafaa8</string>
+    <string name="URL_ТЕЛЕЦ">https://firebasestorage.googleapis.com/v0/b/vitamin-database.appspot.com/o/profileSigns%2FProperty%201%3D%D0%A2%D0%B5%D0%BB%D0%B5%D1%86.png?alt=media&amp;token=47a53973-604f-4f49-98c4-94fc6e988360</string>
 
 </resources>
